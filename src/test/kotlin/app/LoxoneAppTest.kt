@@ -32,8 +32,8 @@ class LoxoneAppTest {
     @Test
     fun `should getControl by type`() {
         val alarmControl = AlarmControl()
-        val room = Room(UUID_ROOM, "room")
-        val category = Category(UUID_CATEGORY, "category")
+        val room = Room(UUID_ROOM, "room", null)
+        val category = Category(UUID_CATEGORY, "category", null)
 
         expectThat(
             LoxoneApp(
@@ -52,8 +52,8 @@ class LoxoneAppTest {
     fun `should getControl by name and type`() {
         val switchControl = SwitchControl()
         switchControl.name = "SomeControl"
-        val room = Room(UUID_ROOM, "room")
-        val category = Category(UUID_CATEGORY, "category")
+        val room = Room(UUID_ROOM, "room", null)
+        val category = Category(UUID_CATEGORY, "category", null)
 
         expectThat(
             LoxoneApp(
@@ -107,8 +107,8 @@ class LoxoneAppTest {
     fun `should getRoomByName by room name`() {
         val switchControl = SwitchControl()
         switchControl.name = "SomeControl"
-        val room = Room(UUID_ROOM, "SomeRoom")
-        val category = Category(UUID_CATEGORY, "SomeCategory")
+        val room = Room(UUID_ROOM, "SomeRoom", null)
+        val category = Category(UUID_CATEGORY, "SomeCategory", null)
         val loxoneApp = LoxoneApp(
             LAST_MODIFIED,
             mockk(),
@@ -132,9 +132,9 @@ class LoxoneAppTest {
     fun `should get exception getRoomByName by room name with duplicate room name`() {
         val switchControl = SwitchControl()
         switchControl.name = "SomeControl"
-        val room = Room(UUID_ROOM, "SomeRoom")
-        val room2 = Room(UUID_ROOM2, "SomeRoom")
-        val category = Category(UUID_CATEGORY, "SomeCategory")
+        val room = Room(UUID_ROOM, "SomeRoom", null)
+        val room2 = Room(UUID_ROOM2, "SomeRoom", null)
+        val category = Category(UUID_CATEGORY, "SomeCategory", null)
         val loxoneApp = LoxoneApp(
             LAST_MODIFIED,
             mockk(),
@@ -152,8 +152,8 @@ class LoxoneAppTest {
     fun `should getCategoryByName by category name`() {
         val switchControl = SwitchControl()
         switchControl.name = "SomeControl"
-        val room = Room(UUID_ROOM, "SomeRoom")
-        val category = Category(UUID_CATEGORY, "SomeCategory")
+        val room = Room(UUID_ROOM, "SomeRoom", null)
+        val category = Category(UUID_CATEGORY, "SomeCategory", null)
         val loxoneApp = LoxoneApp(
             LAST_MODIFIED,
             mockk(),
@@ -177,9 +177,9 @@ class LoxoneAppTest {
     fun `should get exception getCategoryByName by category name with duplicate category name`() {
         val switchControl = SwitchControl()
         switchControl.name = "SomeControl"
-        val room = Room(UUID_ROOM, "SomeRoom")
-        val category = Category(UUID_CATEGORY, "SomeCategory")
-        val category2 = Category(UUID_CATEGORY2, "SomeCategory")
+        val room = Room(UUID_ROOM, "SomeRoom", null)
+        val category = Category(UUID_CATEGORY, "SomeCategory", null)
+        val category2 = Category(UUID_CATEGORY2, "SomeCategory", null)
         val loxoneApp = LoxoneApp(
             LAST_MODIFIED,
             mockk(),

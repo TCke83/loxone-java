@@ -3,6 +3,7 @@ package cz.smarteon.loxone.message;
 import cz.smarteon.loxone.app.MiniserverType;
 import org.jetbrains.annotations.NotNull;
 
+import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.function.Function;
@@ -105,6 +106,10 @@ public class EncryptedCommand<V extends LoxoneValue> extends LoxoneMessageComman
     }
 
     private static String encodeUrl(String toEncode) {
-        return URLEncoder.encode(toEncode, StandardCharsets.UTF_8);
+        try {
+            return URLEncoder.encode(toEncode, StandardCharsets.UTF_8.name());
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
