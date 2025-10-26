@@ -19,7 +19,6 @@ public class AnalogInfoControlState extends ControlState<AnalogInfoControl> {
     @Nullable
     private Double value;
 
-
     public AnalogInfoControlState(Loxone loxone, AnalogInfoControl control) {
         super(loxone, control);
     }
@@ -29,18 +28,23 @@ public class AnalogInfoControlState extends ControlState<AnalogInfoControl> {
      * @param event value event received (should not be null)
      */
     @Override
-    void accept(@NotNull ValueEvent event) {
-        super.accept(event);
+    boolean acceptValueEvent(@NotNull ValueEvent event) {
         if (event.getUuid().equals(control.stateValue())) {
-            processValueEvent(event);
+            return processValueEvent(event);
         }
+        return super.acceptValueEvent(event);
     }
 
     /**
      * Process the ValueEvent as a value event message and update the state of the control accordingly.
      * @param event value event received
      */
-    private void processValueEvent(ValueEvent event) {
-        value = event.getValue();
+    private boolean processValueEvent(ValueEvent event) {
+        final Double eventValue = event.getValue();
+        if (value == null || !value.equals(eventValue)) {
+            value = eventValue;
+            return true;
+        }
+        return false;
     }
 }

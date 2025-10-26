@@ -29,7 +29,9 @@ import java.util.stream.Collectors;
 @Slf4j
 public class LoxoneState implements LoxoneAppListener, LoxoneEventListener {
 
-    private static final Map<Class<? extends Control>, Class<? extends ControlState<? extends Control>>> SUPPORTED_CONTROLS_STATE_MAP;
+    private static final Map<
+            Class<? extends Control>,
+            Class<? extends ControlState<? extends Control>>> SUPPORTED_CONTROLS_STATE_MAP;
 
     private final Loxone loxone;
 

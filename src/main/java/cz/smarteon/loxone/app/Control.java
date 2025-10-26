@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import cz.smarteon.loxone.LoxoneUuid;
 import cz.smarteon.loxone.LoxoneUuids;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import lombok.Getter;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -27,6 +28,7 @@ import java.util.Map;
         @JsonSubTypes.Type(name = AnalogInfoControl.NAME, value = AnalogInfoControl.class)
 })
 @Getter
+@SuppressFBWarnings(value = "RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE", justification = "Fields are annotated with @NotNull and used by Lombok; SpotBugs false-positive on constructor null-checks")
 public abstract class Control {
 
     private static final String STATE_JLOCKED = "jLocked";

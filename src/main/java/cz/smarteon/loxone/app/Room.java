@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
 import org.jetbrains.annotations.NotNull;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 /**
  * Represents Room.
@@ -16,6 +17,7 @@ import org.jetbrains.annotations.NotNull;
 @Builder
 @Value
 @SuppressWarnings("checkstyle:visibilitymodifier")
+@SuppressFBWarnings(value = "RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE", justification = "Fields are annotated with @NotNull and used by Lombok; SpotBugs false-positive on constructor null-checks")
 public class Room {
 
     /**

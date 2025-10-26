@@ -29,18 +29,23 @@ public class DigitalInfoControlState extends ControlState<DigitalInfoControl> {
      * @param event value event received (should not be null)
      */
     @Override
-    void accept(@NotNull ValueEvent event) {
-        super.accept(event);
+    boolean acceptValueEvent(@NotNull ValueEvent event) {
         if (event.getUuid().equals(control.stateActive())) {
-            processActiveEvent(event);
+            return processValueEvent(event);
         }
+        return super.acceptValueEvent(event);
     }
 
     /**
      * Process the ValueEvent as an active state event message and update the state of the control accordingly.
      * @param event value event received
      */
-    private void processActiveEvent(ValueEvent event) {
-        state = event.getValue() == 1;
+    private boolean processValueEvent(ValueEvent event) {
+        final Boolean eventState = event.getValue() == 1;
+        if (state == null || !state.equals(eventState)) {
+            state = eventState;
+            return true;
+        }
+        return false;
     }
 }

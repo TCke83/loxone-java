@@ -13,7 +13,7 @@ plugins {
 java {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
-    withJavadocJar()
+    //withJavadocJar()
     withSourcesJar()
 }
 
@@ -34,6 +34,7 @@ dependencies {
     val slf4jVersion = "1.7.32"
     implementation("org.slf4j:slf4j-api:$slf4jVersion")
     compileOnly("org.jetbrains:annotations:22.0.0")
+    compileOnly("com.github.spotbugs:spotbugs-annotations:4.8.3")
 
     val lombokVersion = "1.18.24"
     compileOnly("org.projectlombok:lombok:$lombokVersion")
