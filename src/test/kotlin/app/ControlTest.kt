@@ -41,7 +41,8 @@ class ControlTest {
         Switch(SwitchControl::class, "CallState", 1, "Switch", 0, false, Pair("active", LoxoneUuid("110cb849-0125-20f9-ffffac0ced78bcf2"))),
         Presence(PresenceControl::class, "PresTest", 0, "Presence", 0),
         DigitalInfo(DigitalInfoControl::class, "kitchen-SqueezeSound", 1, "InfoOnlyDigital", 0),
-        AnalogInfo(AnalogInfoControl::class, "kitchen-SqueezeTrack", 2, "InfoOnlyAnalog", 0);
+        AnalogInfo(AnalogInfoControl::class, "kitchen-SqueezeTrack", 2, "InfoOnlyAnalog", 0),
+        LightControllerV2(LightControllerV2Control::class, "Lichtsturing", 9, "LightControllerV2", 0);
 
         val resourceName = type.simpleName!!.replaceFirstChar { it.lowercase(Locale.getDefault()) }
     }

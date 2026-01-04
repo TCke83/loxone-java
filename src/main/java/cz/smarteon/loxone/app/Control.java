@@ -24,7 +24,9 @@ import java.util.Map;
         @JsonSubTypes.Type(name = PresenceControl.NAME, value = PresenceControl.class),
         @JsonSubTypes.Type(name = TechnicalAlarmControl.NAME, value = TechnicalAlarmControl.class),
         @JsonSubTypes.Type(name = DigitalInfoControl.NAME, value = DigitalInfoControl.class),
-        @JsonSubTypes.Type(name = AnalogInfoControl.NAME, value = AnalogInfoControl.class)
+        @JsonSubTypes.Type(name = AnalogInfoControl.NAME, value = AnalogInfoControl.class),
+        @JsonSubTypes.Type(name = LightControllerV2Control.NAME, value = LightControllerV2Control.class),
+        @JsonSubTypes.Type(name = DimmerControl.NAME, value = DimmerControl.class)
 })
 @Getter
 public abstract class Control {

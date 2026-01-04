@@ -1,7 +1,7 @@
 package cz.smarteon.loxone.app.state.events;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import cz.smarteon.loxone.app.state.Locked;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
@@ -13,10 +13,18 @@ import lombok.extern.jackson.Jacksonized;
 @Builder
 @Jacksonized
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class LockedEvent {
+public class MoodEvent {
 
-    @Builder.Default
-    Locked locked = Locked.NO;
+    String name;
 
-    String reason;
+    String shortName;
+
+    Integer id;
+
+    boolean t5;
+
+    @JsonProperty("static")
+    boolean readOnly;
+
+    Integer used;
 }

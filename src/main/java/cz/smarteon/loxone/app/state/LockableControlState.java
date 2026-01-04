@@ -18,6 +18,7 @@ import java.io.IOException;
  * <p>
  * This class keeps track of the state of the control based on the events of the miniserver.
  * </p>
+ * @param <S> The type of the state.
  * @param <T> The type of control this class keeps track of.
  */
 @Slf4j

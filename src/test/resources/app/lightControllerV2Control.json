@@ -1,0 +1,166 @@
+{
+  "name": "Lichtsturing",
+  "type": "LightControllerV2",
+  "uuidAction": "0efab4a6-0027-6e31-ffffbd85cffe7b53",
+  "room": "0dfedf04-0074-434c-ffffbd85cffe7b53",
+  "cat": "0dfedcb5-0096-0310-ffffbd85cffe7b53",
+  "defaultRating": 0,
+  "isFavorite": false,
+  "isSecured": false,
+  "restrictions": 0,
+  "details": {
+    "jLockable": true,
+    "controlHistory": true,
+    "hasHistory": 20,
+    "movementScene": 6,
+    "masterValue": "0efab4a6-0027-6e31-ffffbd85cffe7b53/masterValue"
+  },
+  "states": {
+    "jLocked": "96b6f3af-035f-9d60-ffff4fda332a6ca0",
+    "activeMoods": "16b6f3af-035f-9d2a-ffff4fda332a6ca0",
+    "moodList": "16b6f3af-035f-9d2b-ffff4fda332a6ca0",
+    "activeMoodsNum": "177b7ef9-00e0-51ff-ffffbd85cffe7b53",
+    "favoriteMoods": "16b6f3af-035f-9d2c-ffff4fda332a6ca0",
+    "additionalMoods": "16b6f3af-035f-9d2d-ffff4fda332a6ca0",
+    "circuitNames": "173bb674-01fd-5017-ffffbd85cffe7b53",
+    "daylightConfig": "1977f766-0347-2a7a-ffffbd85cffe7b53",
+    "presence": "1d5b6dff-036b-9397-ffffbd85cffe7b53"
+  },
+  "subControls": {
+    "0efab4a6-0027-6e31-ffffbd85cffe7b53/masterValue": {
+      "name": "Master helderheid",
+      "type": "Dimmer",
+      "uuidAction": "0efab4a6-0027-6e31-ffffbd85cffe7b53/masterValue",
+      "defaultRating": 0,
+      "isFavorite": false,
+      "isSecured": false,
+      "restrictions": 0,
+      "states": {
+        "position": "16b6f3af-035f-9d9f-ffff4fda332a6ca0",
+        "min": "16b6f3af-035f-9d2f-ffff4fda332a6ca0",
+        "max": "16b6f3af-035f-9d30-ffff4fda332a6ca0",
+        "step": "16b6f3af-035f-9d7b-ffff4fda332a6ca0"
+      }
+    },
+    "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI1": {
+      "name": "Salontafel",
+      "type": "Dimmer",
+      "uuidAction": "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI1",
+      "defaultRating": 0,
+      "isFavorite": false,
+      "isSecured": false,
+      "restrictions": 0,
+      "states": {
+        "position": "16b6f3af-035f-9d8c-ffff4fda332a6ca0",
+        "min": "16b6f3af-035f-9d7d-ffff4fda332a6ca0",
+        "max": "16b6f3af-035f-9d7e-ffff4fda332a6ca0",
+        "step": "16b6f3af-035f-9d7b-ffff4fda332a6ca0"
+      }
+    },
+    "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI2": {
+      "name": "Zetel",
+      "type": "Dimmer",
+      "uuidAction": "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI2",
+      "defaultRating": 0,
+      "isFavorite": false,
+      "isSecured": false,
+      "restrictions": 0,
+      "states": {
+        "position": "16b6f3af-035f-9d8d-ffff4fda332a6ca0",
+        "min": "16b6f3af-035f-9d7d-ffff4fda332a6ca0",
+        "max": "16b6f3af-035f-9d7e-ffff4fda332a6ca0",
+        "step": "16b6f3af-035f-9d7b-ffff4fda332a6ca0"
+      }
+    },
+    "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI3": {
+      "name": "Eettafel",
+      "type": "Dimmer",
+      "uuidAction": "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI3",
+      "defaultRating": 0,
+      "isFavorite": false,
+      "isSecured": false,
+      "restrictions": 0,
+      "states": {
+        "position": "16b6f3af-035f-9d8e-ffff4fda332a6ca0",
+        "min": "16b6f3af-035f-9d7d-ffff4fda332a6ca0",
+        "max": "16b6f3af-035f-9d7e-ffff4fda332a6ca0",
+        "step": "16b6f3af-035f-9d7b-ffff4fda332a6ca0"
+      }
+    },
+    "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI4": {
+      "name": "Keuken",
+      "type": "Dimmer",
+      "uuidAction": "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI4",
+      "defaultRating": 0,
+      "isFavorite": false,
+      "isSecured": false,
+      "restrictions": 0,
+      "states": {
+        "position": "16b6f3af-035f-9d8f-ffff4fda332a6ca0",
+        "min": "16b6f3af-035f-9d7d-ffff4fda332a6ca0",
+        "max": "16b6f3af-035f-9d7e-ffff4fda332a6ca0",
+        "step": "16b6f3af-035f-9d7b-ffff4fda332a6ca0"
+      }
+    },
+    "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI5": {
+      "name": "Kookeiland",
+      "type": "Dimmer",
+      "uuidAction": "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI5",
+      "defaultRating": 0,
+      "isFavorite": false,
+      "isSecured": false,
+      "restrictions": 0,
+      "states": {
+        "position": "16b6f3af-035f-9d90-ffff4fda332a6ca0",
+        "min": "16b6f3af-035f-9d7d-ffff4fda332a6ca0",
+        "max": "16b6f3af-035f-9d7e-ffff4fda332a6ca0",
+        "step": "16b6f3af-035f-9d7b-ffff4fda332a6ca0"
+      }
+    },
+    "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI6": {
+      "name": "Spotjes klein aanrecht",
+      "type": "Dimmer",
+      "uuidAction": "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI6",
+      "defaultRating": 0,
+      "isFavorite": false,
+      "isSecured": false,
+      "restrictions": 0,
+      "states": {
+        "position": "16b6f3af-035f-9d91-ffff4fda332a6ca0",
+        "min": "16b6f3af-035f-9d7d-ffff4fda332a6ca0",
+        "max": "16b6f3af-035f-9d7e-ffff4fda332a6ca0",
+        "step": "16b6f3af-035f-9d7b-ffff4fda332a6ca0"
+      }
+    },
+    "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI7": {
+      "name": "LED strips klein aanrecht",
+      "type": "Dimmer",
+      "uuidAction": "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI7",
+      "defaultRating": 0,
+      "isFavorite": false,
+      "isSecured": false,
+      "restrictions": 0,
+      "states": {
+        "position": "16b6f3af-035f-9d92-ffff4fda332a6ca0",
+        "min": "16b6f3af-035f-9d7d-ffff4fda332a6ca0",
+        "max": "16b6f3af-035f-9d7e-ffff4fda332a6ca0",
+        "step": "16b6f3af-035f-9d7b-ffff4fda332a6ca0"
+      }
+    },
+    "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI8": {
+      "name": "Dressoir",
+      "type": "Dimmer",
+      "uuidAction": "0efab4a6-0027-6e31-ffffbd85cffe7b53/AI8",
+      "defaultRating": 0,
+      "isFavorite": false,
+      "isSecured": false,
+      "restrictions": 0,
+      "states": {
+        "position": "16b6f3af-035f-9d93-ffff4fda332a6ca0",
+        "min": "16b6f3af-035f-9d7d-ffff4fda332a6ca0",
+        "max": "16b6f3af-035f-9d7e-ffff4fda332a6ca0",
+        "step": "16b6f3af-035f-9d7b-ffff4fda332a6ca0"
+      }
+    }
+  }
+}

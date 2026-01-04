@@ -22,21 +22,5 @@
     "armedDelayTotal": "0f86a2fe-0378-3dfb-ffffb2d4efc8b5b6",
     "sensors": "0f86a2fe-0378-3e15-ffff373f9870b52a",
     "disabledMove": "10a73e3b-01c5-1904-ffff373f9870b52a"
-  },
-  "subControls": {
-    "0f86a2fe-0378-3e15-ffff373f9870b52a/sensors": {
-      "name": "sensors",
-      "type": "Tracker",
-      "uuidAction": "0f86a2fe-0378-3e15-ffff373f9870b52a/sensors",
-      "defaultRating": 0,
-      "isFavorite": false,
-      "isSecured": false,
-      "details": {
-        "maxEntries": 40
-      },
-      "states": {
-        "entries": "0f86a2fe-0378-3e15-ffff373f9870b52a"
-      }
-    }
   }
 }

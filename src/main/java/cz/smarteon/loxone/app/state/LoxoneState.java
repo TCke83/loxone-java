@@ -6,11 +6,7 @@ import cz.smarteon.loxone.LoxoneEventListener;
 import cz.smarteon.loxone.LoxoneException;
 import cz.smarteon.loxone.LoxoneProfile;
 import cz.smarteon.loxone.LoxoneUuid;
-import cz.smarteon.loxone.app.AnalogInfoControl;
-import cz.smarteon.loxone.app.Control;
-import cz.smarteon.loxone.app.DigitalInfoControl;
-import cz.smarteon.loxone.app.LoxoneApp;
-import cz.smarteon.loxone.app.SwitchControl;
+import cz.smarteon.loxone.app.*;
 import cz.smarteon.loxone.message.TextEvent;
 import cz.smarteon.loxone.message.ValueEvent;
 import lombok.extern.slf4j.Slf4j;
@@ -44,6 +40,8 @@ public class LoxoneState implements LoxoneAppListener, LoxoneEventListener {
         SUPPORTED_CONTROLS_STATE_MAP.put(SwitchControl.class, SwitchControlState.class);
         SUPPORTED_CONTROLS_STATE_MAP.put(AnalogInfoControl.class, AnalogInfoControlState.class);
         SUPPORTED_CONTROLS_STATE_MAP.put(DigitalInfoControl.class, DigitalInfoControlState.class);
+        SUPPORTED_CONTROLS_STATE_MAP.put(LightControllerV2Control.class, LightControllerV2ControlState.class);
+        SUPPORTED_CONTROLS_STATE_MAP.put(DimmerControl.class, DimmerControlState.class);
     }
 
     public LoxoneState(@NotNull LoxoneProfile loxoneProfile) {
